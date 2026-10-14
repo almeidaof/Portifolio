@@ -1,177 +1,3 @@
-
-deu tudo certo?
-Ainda não, amor. ❤️ A correção não foi aplicada ao teu site no GitHub.
-
-Teu código original continua como estava. Vamos corrigir e testar antes de considerar o Entre Linhas pronto para o portfólio.
-
-OLHA ESSE CODIGO -  <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flávia Almeida | Desenvolvedora Web</title>
-<meta name="description" content="Portfólio de Flávia Almeida — desenvolvimento de sites, UX e qualidade digital.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#0a0a0b;
-  --surface:#111113;
-  --surface-2:#17171a;
-  --border:#262629;
-  --text:#f2f2f3;
-  --muted:#9a9aa0;
-  --dim:#6a6a70;
-  --accent:#d4d4d8;
-  --radius:16px;
-  --maxw:1080px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Inter',system-ui,sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,.brand{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em}
-a{color:inherit;text-decoration:none}
-.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-.section{padding:110px 0;position:relative}
-.eyebrow{
-  font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--dim);margin-bottom:18px;font-weight:500;
-}
-.sec-title{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:600;margin-bottom:16px}
-.sec-sub{color:var(--muted);max-width:620px;font-weight:300}
-#bg-canvas{position:fixed;inset:0;z-index:0;opacity:.5;pointer-events:none}
-.wrap{position:relative;z-index:1}
-.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:.4s}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:var(--maxw);margin:0 auto;padding:0 24px}
-.nav.scrolled{background:rgba(10,10,11,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
-.brand{font-weight:700;font-size:1.05rem;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
-.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--text);box-shadow:0 0 14px var(--text)}
-.nav-links{display:flex;gap:34px;list-style:none}
-.nav-links a{font-size:.9rem;color:var(--muted);font-weight:400;transition:.25s;position:relative}
-.nav-links a:hover{color:var(--text)}
-.nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--text);transition:.3s}
-.nav-links a:hover::after{width:100%}
-.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0}
-.burger span{width:24px;height:2px;background:var(--text);transition:.3s}
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:72px}
-.hero-grid{display:grid;grid-template-columns:1.3fr .9fr;gap:60px;align-items:center;width:100%}
-.hero .tag{display:inline-block;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);border:1px solid var(--border);padding:7px 16px;border-radius:40px;margin-bottom:28px}
-.hero h1{font-size:clamp(2.6rem,6.5vw,4.6rem);font-weight:700;line-height:1.02;margin-bottom:22px}
-.hero h1 .grad{background:linear-gradient(100deg,#fff,#8a8a90);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.hero .role{font-family:'Space Grotesk';font-size:1.15rem;color:var(--muted);letter-spacing:.04em;margin-bottom:26px}
-.hero p.lead{color:var(--muted);font-weight:300;max-width:520px;margin-bottom:38px}
-.cta-row{display:flex;gap:16px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:50px;font-size:.92rem;font-weight:500;transition:.3s;cursor:pointer;border:1px solid transparent}
-.btn-primary{background:var(--text);color:#0a0a0b}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(255,255,255,.14)}
-.btn-ghost{border-color:var(--border);color:var(--text)}
-.btn-ghost:hover{background:var(--surface-2);border-color:#3a3a40}
-.orbit{position:relative;width:300px;height:300px;margin:0 auto}
-.orbit .ring{position:absolute;border-radius:50%;border:1px solid var(--border)}
-.r1{inset:0;animation:spin 26s linear infinite}
-.r2{inset:34px;border-style:dashed;border-color:#1f1f22;animation:spin 20s linear infinite reverse}
-.r3{inset:70px;border-color:#2c2c30}
-.orbit .core{position:absolute;inset:70px;border-radius:50%;background:#0d0d0f center/cover no-repeat;box-shadow:inset 0 0 0 2px var(--border),0 0 40px rgba(0,0,0,.5);background-image:url('avatar.jpg')}
-.orbit .sat{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--text);top:-6px;left:50%;box-shadow:0 0 16px var(--text)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.reveal{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.8,.2,1)}
-.reveal.in{opacity:1;transform:none}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
-.about-text p{color:var(--muted);font-weight:300;margin-bottom:18px}
-.about-text p strong{color:var(--text);font-weight:500}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:.3s}
-.stat:hover{border-color:#3a3a40;transform:translateY(-4px)}
-.stat .n{font-family:'Space Grotesk';font-size:2rem;font-weight:700;background:linear-gradient(120deg,#fff,#7a7a80);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.stat .l{font-size:.82rem;color:var(--dim);margin-top:6px}
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:46px}
-.skill{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 22px;display:flex;align-items:center;gap:14px;transition:.3s}
-.skill:hover{background:var(--surface-2);border-color:#3a3a40;transform:translateY(-3px)}
-.skill .ic{width:40px;height:40px;border-radius:10px;background:#000;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex:0 0 auto}
-.skill .nm{font-weight:500;font-size:.95rem}
-.int-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:46px}
-.int-card{background:linear-gradient(160deg,var(--surface-2),var(--surface));border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:.35s;position:relative;overflow:hidden}
-.int-card:hover{border-color:#45454c;transform:translateY(-5px)}
-.int-card .big{font-family:'Space Grotesk';font-size:2.4rem;font-weight:700;color:#2e2e33;margin-bottom:10px}
-.int-card h3{font-size:1.2rem;margin-bottom:10px}
-.int-card p{color:var(--muted);font-weight:300;font-size:.92rem}
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:46px}
-.proj{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px;transition:.35s;display:flex;flex-direction:column;gap:14px}
-.proj:hover{border-color:#45454c;transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
-.proj .top{display:flex;align-items:center;justify-content:space-between}
-.proj .idx{font-family:'Space Grotesk';font-size:.85rem;color:var(--dim);letter-spacing:.1em}
-.proj h3{font-size:1.25rem}
-.proj p{color:var(--muted);font-weight:300;font-size:.92rem;flex:1}
-.proj .tags{display:flex;gap:8px;flex-wrap:wrap}
-.proj .tags span{font-size:.72rem;color:var(--muted);border:1px solid var(--border);padding:4px 10px;border-radius:20px}
-.proj .link{font-size:.88rem;color:var(--text);font-weight:500;display:inline-flex;gap:6px;align-items:center}
-.arrow{transition:.3s}
-.proj:hover .arrow{transform:translateX(5px)}
-.contact{text-align:center}
-.contact h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:600;margin-bottom:20px}
-.contact p{color:var(--muted);font-weight:300;max-width:520px;margin:0 auto 36px}
-.social{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.social a{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border:1px solid var(--border);border-radius:50px;transition:.3s;font-size:.92rem}
-.social a:hover{background:var(--surface-2);border-color:#45454c;transform:translateY(-2px)}
-footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color:var(--dim);font-size:.85rem}
-@media(max-width:860px){
-  .hero-grid,.about-grid{grid-template-columns:1fr;gap:40px}
-  .orbit{width:230px;height:230px}
-  .orbit .core{inset:72px;font-size:2rem}
-  .nav-links{position:fixed;top:72px;right:0;flex-direction:column;background:rgba(10,10,11,.96);backdrop-filter:blur(14px);border:1px solid var(--border);border-radius:0 0 0 16px;padding:24px 30px;gap:20px;transform:translateX(120%);transition:.35s}
-  .nav-links.open{transform:none}
-  .burger{display:flex}
-  .section{padding:80px 0}
-}
-</style>
-</head>
-<body>
-<canvas id="bg-canvas"></canvas>
-<div class="wrap">
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#top" class="brand"><span class="dot"></span>Flávia Almeida</a>
-    <ul class="nav-links">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#interesses">Interesses</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-
-<header class="hero" id="top">
-  <div class="container hero-grid">
-    <div>
-      <span class="tag">Desenvolvimento Web • UX • Qualidade</span>
-      <h1>Criando sites<br><span class="grad">modernos e funcionais.</span></h1>
-      <p class="role">Desenvolvedora Web • Front-end &amp; QA</p>
-      <p class="lead">Transformo ideias em experiências digitais responsivas, com atenção aos detalhes e foco na experiência do usuário.</p>
-      <div class="cta-row">
-        <a href="#projetos" class="btn btn-primary">Ver projetos →</a>
-        <a href="https://github.com/almeidaof" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
-      </div>
-    </div>
-    <div>
-      <div class="orbit">
-        <div class="ring r1"><span class="sat"></spa
-…
-Amor, achei o problema principal! ❤️ Tu colou o HTML inteiro duas vezes. Isso precisa ser corrigido antes de publicar.
-
-Também precisamos trocar os projetos genéricos pelos links reais do Entre Linhas e dos outros sites, e ajustar “O que eu domino” para não prometer habilidades que ainda estás aprendendo.
-
-Vamos por partes: primeiro, apaga a segunda cópia inteira, começando no segundo <!DOCTYPE html> até o final. Não mexe na primeira cópia.
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -304,6 +130,7 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
 <body>
 <canvas id="bg-canvas"></canvas>
 <div class="wrap">
+
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="brand"><span class="dot"></span>Flávia Almeida</a>
@@ -442,7 +269,8 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
 <footer>
   <div class="container">© 2026 Flávia Almeida — Desenvolvedora Web. Feito com HTML, CSS &amp; atenção aos detalhes.</div>
 </footer>
-</div>
+
+</div><!-- /wrap -->
 
 <script>
 (function(){
@@ -454,10 +282,12 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
   });
   burger.addEventListener('click',function(){links.classList.toggle('open');});
   links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');}});
+
   var io=new IntersectionObserver(function(entries){
     entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
   },{threshold:.14});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
   var c=document.getElementById('bg-canvas'),x=c.getContext('2d'),W,H,ps=[];
   function size(){W=c.width=innerWidth;H=c.height=innerHeight;}
   size();window.addEventListener('resize',size);
@@ -481,43 +311,3 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
 </script>
 </body>
 </html>
-Agora sim, amor! ❤️ O HTML está com uma única cópia e a estrutura principal está organizada.
-
-Próximo passo: vamos corrigir a seção “O que eu domino”, para separar o que já sabes do que ainda estás aprendendo. Depois, colocamos o Entre Linhas e o site da lancha nos projetos reais do teu portfólio.
-
-COMO EU POSTO ESSE PORTFOLIO LÁ? NORMAL
-Sim, amor! Normal pelo GitHub Pages. ❤️
-
-Entra no GitHub e cria um repositório chamado portfolio.
-
-Envia esse código num arquivo chamado index.html.
-
-Vai em Settings → Pages → Deploy from a branch → main → /(root) → Save.
-
-Vamos por partes: tu já criaste o repositório portfolio ou ainda não?
-
-como fizemos tudo ate agr
-Verdade, amor! ❤️ Vamos fazer igual aos outros sites, sem inventar caminho novo.
-
-Entra no teu GitHub, abre o repositório onde queres colocar o portfólio e me diz quando estiver aberto. Aí seguimos um passo de cada vez, como fizemos antes.
-
-te enviei agora o condigo dele
-Sim, amor! Tu me enviaste o código completo. ❤️
-
-Agora precisamos colocá-lo no GitHub, como fizemos com os outros sites. Abre o repositório onde vais publicar o portfólio e me mostra a tela.
-
-Anexo do usuário
-Anexo do usuário
-Anexo do usuário
-Anexo do usuário
-Anexo do usuário
-Anexo do usuário
-Anexo do usuário
-Anexo do usuário
-AMOOOR, ele já está publicado e abrindo! 😂❤️ As capturas mostram o portfólio funcionando.
-
-Agora falta corrigir os projetos genéricos e colocar os links reais do Entre Linhas e do site da lancha. Vamos fazer isso primeiro!
-
-
-
-
