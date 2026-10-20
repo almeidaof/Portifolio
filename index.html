@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flávia Almeida | Desenvolvedora Web</title>
-<meta name="description" content="Portfólio de Flávia Almeida — desenvolvimento de sites, UX e qualidade digital.">
+<title>Flávia Almeida | Desenvolvimento Web, QA/QC e IA</title>
+<meta name="description" content="Portfólio de Flávia Almeida: desenvolvimento web, testes de software (QA/QC), investigação de problemas e projetos de IA em desenvolvimento.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -100,7 +100,8 @@ a{color:inherit;text-decoration:none}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:46px}
 .proj{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px;transition:.35s;display:flex;flex-direction:column;gap:14px}
 .proj:hover{border-color:#45454c;transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
-.proj .top{display:flex;align-items:center;justify-content:space-between}
+.proj .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.proj-status{font-size:.72rem;color:var(--accent);border:1px solid var(--border);padding:4px 10px;border-radius:20px;text-align:right}
 .proj .idx{font-family:'Space Grotesk';font-size:.85rem;color:var(--dim);letter-spacing:.1em}
 .proj h3{font-size:1.25rem}
 .proj p{color:var(--muted);font-weight:300;font-size:.92rem;flex:1}
@@ -148,13 +149,13 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
 <header class="hero" id="top">
   <div class="container hero-grid">
     <div>
-      <span class="tag">Desenvolvimento Web • UX • Qualidade</span>
-      <h1>Criando sites<br><span class="grad">modernos e funcionais.</span></h1>
-      <p class="role">Desenvolvedora Web • Front-end &amp; QA &amp; QC</p>
-      <p class="lead">Transformo ideias em experiências digitais responsivas, com atenção aos detalhes e foco na experiência do usuário.</p>
+      <span class="tag">Desenvolvimento Web • QA/QC • Projetos com IA</span>
+      <h1>Da ideia ao teste.<br><span class="grad">Soluções que funcionam.</span></h1>
+      <p class="role">Desenvolvimento Web • Testes QA/QC • IA em desenvolvimento</p>
+      <p class="lead">Investigo problemas, desenvolvo soluções digitais e testo os detalhes. Meu foco é criar experiências úteis, funcionais e bem construídas.</p>
       <div class="cta-row">
-        <a href="#projetos" class="btn btn-primary">Ver projetos →</a>
-        <a href="https://github.com/almeidaof" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="#projetos" class="btn btn-primary">Conheça meus projetos →</a>
+        <a href="#sobre" class="btn btn-ghost">Como eu trabalho</a>
       </div>
     </div>
     <div>
@@ -173,16 +174,16 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
     <div class="about-grid">
       <div class="about-text reveal">
         <p class="eyebrow">Sobre mim</p>
-        <h2 class="sec-title">Tecnologia, UX e qualidade digital.</h2>
-        <p>Sou profissional em <strong>desenvolvimento de sites</strong>, com interesse em tecnologia, experiência do usuário e qualidade digital. Tenho projetos próprios publicados no GitHub Pages e busco criar soluções modernas, funcionais e adaptadas às necessidades de cada cliente.</p>
-        <p>Tenho <strong>atenção aos detalhes</strong>, gosto de identificar erros e oportunidades de melhoria e valorizo a comunicação clara, a organização e a entrega de um trabalho bem-feito.</p>
-        <p>Estou em <strong>constante aprendizado</strong> para ampliar minhas habilidades e oferecer serviços de criação e melhoria de sites.</p>
+        <h2 class="sec-title">Criar, investigar, testar e melhorar.</h2>
+        <p>Gosto de entender <strong>como as coisas funcionam</strong> — e, principalmente, descobrir o que fazer quando algo não funciona. Trabalho com desenvolvimento de páginas web, testes de software e resolução prática de problemas.</p>
+        <p>Na <strong>Operação Cambridge</strong>, investiguei falhas em imagens e navegação, fiz ajustes no código e registrei os resultados em um relatório de QA. O trabalho ainda tem pontos em revisão; documentar o que falta corrigir também faz parte de testar com responsabilidade.</p>
+        <p>Também estou criando os protótipos <strong>Astra e Tia Mel</strong>, explorando assistentes com IA, organização de tarefas, fluxos de atendimento e cuidados com privacidade. São projetos em desenvolvimento, nos quais aprendo construindo, testando e aprimorando cada etapa.</p>
       </div>
       <div class="stats reveal">
-        <div class="stat"><div class="n">HTML</div><div class="l">Estrutura semântica</div></div>
-        <div class="stat"><div class="n">CSS</div><div class="l">Design responsivo</div></div>
-        <div class="stat"><div class="n">QA / QC</div><div class="l">Testes &amp; qualidade</div></div>
-        <div class="stat"><div class="n">Pages</div><div class="l">Publicação GitHub</div></div>
+        <div class="stat"><div class="n">Web</div><div class="l">Sites e interfaces responsivas</div></div>
+        <div class="stat"><div class="n">QA/QC</div><div class="l">Investigação e registro de bugs</div></div>
+        <div class="stat"><div class="n">IA</div><div class="l">Protótipos e fluxos em construção</div></div>
+        <div class="stat"><div class="n">Git</div><div class="l">Versões e publicação de projetos</div></div>
       </div>
     </div>
   </div>
@@ -192,18 +193,18 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
   <div class="container">
     <div class="reveal">
       <p class="eyebrow">Habilidades</p>
-      <h2 class="sec-title">O que eu domino</h2>
-      <p class="sec-sub">Um conjunto de competências técnicas e criativas que uso para construir e melhorar produtos digitais.</p>
+      <h2 class="sec-title">Tecnologias e competências</h2>
+      <p class="sec-sub">Ferramentas que utilizo, conhecimentos que pratico e habilidades que aplico ao resolver problemas reais.</p>
     </div>
     <div class="skills-grid reveal">
-      <div class="skill"><div class="ic">🗄️</div><div class="nm">Administração de Banco de Dados</div></div>
-      <div class="skill"><div class="ic">📊</div><div class="nm">Análise de Dados</div></div>
+      <div class="skill"><div class="ic">🧱</div><div class="nm">HTML e CSS</div></div>
+      <div class="skill"><div class="ic">🐙</div><div class="nm">Git e GitHub</div></div>
+      <div class="skill"><div class="ic">✅</div><div class="nm">QA / QC e Testes</div></div>
+      <div class="skill"><div class="ic">🔍</div><div class="nm">Investigação e Diagnóstico</div></div>
+      <div class="skill"><div class="ic">🤖</div><div class="nm">Protótipos com IA</div></div>
+      <div class="skill"><div class="ic">🐍</div><div class="nm">Python — conhecimentos</div></div>
+      <div class="skill"><div class="ic">⚙️</div><div class="nm">C — conhecimentos</div></div>
       <div class="skill"><div class="ic">✍️</div><div class="nm">Escrita Criativa</div></div>
-      <div class="skill"><div class="ic">🐙</div><div class="nm">GitHub</div></div>
-      <div class="skill"><div class="ic">⚙️</div><div class="nm">Programação em C</div></div>
-      <div class="skill"><div class="ic">🐍</div><div class="nm">Python</div></div>
-      <div class="skill"><div class="ic">✅</div><div class="nm">QA / QC / Testes</div></div>
-      <div class="skill"><div class="ic">🎬</div><div class="nm">Roteiro de Cinema e Vídeo</div></div>
     </div>
   </div>
 </section>
@@ -215,9 +216,9 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
       <h2 class="sec-title">Para onde estou crescendo</h2>
     </div>
     <div class="int-grid reveal">
-      <div class="int-card"><div class="big">01</div><h3>Banco de Dados</h3><p>Modelagem, administração e otimização de dados para aplicações confiáveis.</p></div>
-      <div class="int-card"><div class="big">02</div><h3>Teste de Software</h3><p>Garantia de qualidade, identificação de erros e melhoria contínua de produtos.</p></div>
-      <div class="int-card"><div class="big">03</div><h3>Criação &amp; Integração com IA</h3><p>Explorar soluções inteligentes e integrá-las a experiências web modernas.</p></div>
+      <div class="int-card"><div class="big">01</div><h3>Banco de Dados</h3><p>Conhecimento para aprofundar futuramente, conforme a necessidade de sistemas e projetos reais.</p></div>
+      <div class="int-card"><div class="big">02</div><h3>QA/QC e Testes de Software</h3><p>Desenvolver testes mais completos, documentar bugs e acompanhar cada correção até o reteste.</p></div>
+      <div class="int-card"><div class="big">03</div><h3>IA e Automação</h3><p>Evoluir os protótipos Astra e Tia Mel com foco em utilidade, privacidade e funcionamento confiável.</p></div>
     </div>
   </div>
 </section>
@@ -226,30 +227,28 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
   <div class="container">
     <div class="reveal">
       <p class="eyebrow">Projetos</p>
-      <h2 class="sec-title">Trabalhos selecionados</h2>
-      <p class="sec-sub">Projetos publicados no GitHub Pages. Visite meu perfil para ver o código e as versões ao vivo.</p>
+      <h2 class="sec-title">Projetos e casos reais</h2>
+      <p class="sec-sub">Uma seleção transparente do que já construí, testei ou estou desenvolvendo. Cada projeto mostra seu estágio atual.</p>
     </div>
     <div class="proj-grid reveal">
       <article class="proj">
-        <div class="top"><span class="idx">01</span></div>
-        <h3>Site Responsivo</h3>
-        <p>Website construído com HTML e CSS, com foco em design responsivo e boa experiência em qualquer tela.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>Responsivo</span></div>
-        <a class="link" href="https://github.com/almeidaof" target="_blank" rel="noopener">Ver no GitHub <span class="arrow">→</span></a>
+        <div class="top"><span class="idx">01</span><span class="proj-status">Publicado</span></div>
+        <h3>Meu portfólio web</h3>
+        <p>Site pessoal responsivo, desenvolvido para apresentar meu trabalho. Reúne navegação por seções, adaptação a telas diferentes e interações visuais.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a class="link" href="#top">Você está neste projeto <span class="arrow">↑</span></a>
       </article>
       <article class="proj">
-        <div class="top"><span class="idx">02</span></div>
-        <h3>Página GitHub Pages</h3>
-        <p>Projeto publicado via GitHub Pages, demonstrando o fluxo completo de desenvolvimento e deploy.</p>
-        <div class="tags"><span>Git</span><span>Deploy</span><span>UX</span></div>
-        <a class="link" href="https://github.com/almeidaof" target="_blank" rel="noopener">Ver no GitHub <span class="arrow">→</span></a>
+        <div class="top"><span class="idx">02</span><span class="proj-status">Em revisão</span></div>
+        <h3>Operação Cambridge — QA</h3>
+        <p>Investigação real de falhas em um site publicado: imagens, navegação e visualização em telas diferentes. Registrei ocorrências e resultados em relatório; ainda há correções e retestes pendentes.</p>
+        <div class="tags"><span>QA/QC</span><span>Registro de bugs</span><span>Retestes</span></div>
       </article>
       <article class="proj">
-        <div class="top"><span class="idx">03</span></div>
-        <h3>Experimentos &amp; Melhorias</h3>
-        <p>Pequenos projetos de estudo e aprimoramento contínuo em desenvolvimento web e testes.</p>
-        <div class="tags"><span>JS</span><span>QA / QC</span><span>Learning</span></div>
-        <a class="link" href="https://github.com/almeidaof" target="_blank" rel="noopener">Ver no GitHub <span class="arrow">→</span></a>
+        <div class="top"><span class="idx">03</span><span class="proj-status">Em desenvolvimento</span></div>
+        <h3>Astra e Tia Mel — Protótipos de IA</h3>
+        <p>Criação de assistentes em desenvolvimento: Astra, para apoiar tarefas e organização, e Tia Mel, voltada ao contexto do reforço escolar. Projetos conduzidos com atenção à privacidade e aos testes.</p>
+        <div class="tags"><span>IA</span><span>Protótipos</span><span>Privacidade</span></div>
       </article>
     </div>
   </div>
@@ -259,15 +258,15 @@ footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color
   <div class="container reveal">
     <p class="eyebrow">Contato</p>
     <h2>Vamos construir algo juntos.</h2>
-    <p>Estou aberta a novos projetos e colaborações em criação e melhoria de sites. Fale comigo pelo GitHub.</p>
+    <p>Aberta a projetos de desenvolvimento web e colaboração em testes de software. Meu GitHub reúne repositórios públicos e registros da minha evolução técnica.</p>
     <div class="social">
-      <a href="https://github.com/almeidaof" target="_blank" rel="noopener">🐙 github.com/almeidaof</a>
+      <a href="https://github.com/almeidaof" target="_blank" rel="noopener">🐙 Visitar perfil GitHub ↗</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="container">© 2026 Flávia Almeida — Desenvolvedora Web. Feito com HTML, CSS &amp; atenção aos detalhes.</div>
+  <div class="container">© 2026 Flávia Almeida — Desenvolvimento Web, QA/QC e projetos de IA.</div>
 </footer>
 
 </div><!-- /wrap -->
